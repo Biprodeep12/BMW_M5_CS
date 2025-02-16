@@ -15,3 +15,42 @@
   background: #ccc;
   border-radius: 10px;
 }
+.textModel {
+  position: absolute;
+  z-index: 9;
+  width: 650px;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  padding: 60px 0 0 40px;
+}
+.textModel h1,
+.textModel h2 {
+  color: white;
+  font-family: 'Meta', sans-serif;
+}
+.textModel h1 {
+  font-size: 4rem;
+  transform: translate(-100px);
+  animation: h1op 0.3s linear 8s forwards;
+  opacity: 0;
+}
+.textModel h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  transform: translate(-100px);
+  animation: h1op 0.3s linear 8.5s forwards;
+  opacity: 0;
+}
+@keyframes h1op {
+  from {
+    opacity: 0;
+
+    transform: translate(-100px);
+  }
+  to {
+    opacity: 1;
+
+    transform: translate(0);
+  }
+}
